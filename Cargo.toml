@@ -6,4 +6,7 @@ edition = "2024"
 [[bin]]
 name = "p5"
 
+[[bin]]
+name = "p6"
+
 [dependencies]
