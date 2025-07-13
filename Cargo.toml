@@ -27,4 +27,7 @@ name = "p17"
 [[bin]]
 name = "p18"
 
+[[bin]]
+name = "p19"
+
 [dependencies]
