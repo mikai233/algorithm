@@ -37,6 +37,12 @@ name = "p18"
 name = "p19"
 
 [[bin]]
+name = "p22"
+
+[[bin]]
+name = "p22_stack"
+
+[[bin]]
 name = "p26"
 
 [[bin]]
