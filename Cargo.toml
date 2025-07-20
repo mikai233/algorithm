@@ -13,6 +13,9 @@ name = "p2"
 name = "p3"
 
 [[bin]]
+name = "p4"
+
+[[bin]]
 name = "p3_optimized"
 
 [[bin]]

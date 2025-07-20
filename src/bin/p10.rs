@@ -16,7 +16,7 @@ impl Solution {
                     }
                 } else if j > 1 {
                     let p = pattern[j - 2];
-                    if i > 0 && j > 1 && (p == text[i - 1] || p == b'.') {
+                    if i > 0 && (p == text[i - 1] || p == b'.') {
                         dp[i][j] = dp[i - 1][j];
                     }
                     dp[i][j] |= dp[i][j - 2];
