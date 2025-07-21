@@ -37,6 +37,9 @@ name = "p9"
 name = "p10"
 
 [[bin]]
+name = "p11"
+
+[[bin]]
 name = "p16"
 
 [[bin]]
