@@ -1,5 +1,3 @@
-use std::cmp::max;
-
 struct Solution;
 
 impl Solution {
@@ -7,13 +5,12 @@ impl Solution {
         let (mut left, mut right) = (0, height.len() - 1);
         let mut max_area = 0;
         while left < right {
-            let l = height[left];
-            let r = height[right];
-            let height = std::cmp::min(l, r);
-            max_area = max(max_area, height * (right - left) as i32);
-            if l < r {
+            let h = height[left].min(height[right]);
+            max_area = max_area.max(h * (right - left) as i32);
+            while left < right && height[left] <= h {
                 left += 1;
-            } else {
+            }
+            while left < right && height[right] <= h {
                 right -= 1;
             }
         }
