@@ -85,6 +85,15 @@ name = "p23"
 name = "p23_iteration"
 
 [[bin]]
+name = "p24"
+
+[[bin]]
+name = "p24_recursion"
+
+[[bin]]
+name = "p24_stack"
+
+[[bin]]
 name = "p26"
 
 [[bin]]
