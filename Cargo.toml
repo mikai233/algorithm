@@ -112,6 +112,9 @@ name = "p30"
 name = "p31"
 
 [[bin]]
+name = "p88"
+
+[[bin]]
 name = "p445"
 
 [[bin]]
