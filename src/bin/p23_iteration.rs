@@ -54,12 +54,8 @@ impl Solution {
                     }
                     tail = tail.next.as_mut().unwrap();
                 }
-                (Some(n1), None) => {
-                    tail.next = Some(n1);
-                    break;
-                }
-                (None, Some(n2)) => {
-                    tail.next = Some(n2);
+                (Some(n), None) | (None, Some(n)) => {
+                    tail.next = Some(n);
                     break;
                 }
                 (None, None) => break,
