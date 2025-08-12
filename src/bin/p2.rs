@@ -24,11 +24,8 @@ impl Solution {
         let mut carry = 0;
         loop {
             let val = match (l1, l2) {
-                (None, Some(s2)) => {
-                    s2.val + carry
-                }
-                (Some(s1), None) => {
-                    s1.val + carry
+                (None, Some(n)) | (Some(n), None) => {
+                    n.val + carry
                 }
                 (Some(s1), Some(s2)) => {
                     s1.val + s2.val + carry
