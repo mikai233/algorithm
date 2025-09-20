@@ -8,10 +8,7 @@ pub struct ListNode {
 impl ListNode {
     #[inline]
     fn new(val: i32) -> Self {
-        ListNode {
-            next: None,
-            val,
-        }
+        ListNode { next: None, val }
     }
 }
 
@@ -46,9 +43,17 @@ fn vec_to_node(vec: Vec<i32>) -> Option<Box<ListNode>> {
     head
 }
 
-
 fn main() {
-    println!("{:?}", Solution::remove_nth_from_end(vec_to_node(vec![1]), 1));
-    println!("{:?}", Solution::remove_nth_from_end(vec_to_node(vec![1, 2, 3, 4, 5]), 2));
-    println!("{:?}", Solution::remove_nth_from_end(vec_to_node(vec![1, 2]), 1));
+    println!(
+        "{:?}",
+        Solution::remove_nth_from_end(vec_to_node(vec![1]), 1)
+    );
+    println!(
+        "{:?}",
+        Solution::remove_nth_from_end(vec_to_node(vec![1, 2, 3, 4, 5]), 2)
+    );
+    println!(
+        "{:?}",
+        Solution::remove_nth_from_end(vec_to_node(vec![1, 2]), 1)
+    );
 }

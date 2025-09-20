@@ -17,7 +17,16 @@ impl Solution {
 }
 
 fn main() {
-    println!("{}", Solution::length_of_last_word("Hello World".to_string()));
-    println!("{}", Solution::length_of_last_word("   fly me   to   the moon  ".to_string()));
-    println!("{}", Solution::length_of_last_word("luffy is still joyboy".to_string()));
+    println!(
+        "{}",
+        Solution::length_of_last_word("Hello World".to_string())
+    );
+    println!(
+        "{}",
+        Solution::length_of_last_word("   fly me   to   the moon  ".to_string())
+    );
+    println!(
+        "{}",
+        Solution::length_of_last_word("luffy is still joyboy".to_string())
+    );
 }

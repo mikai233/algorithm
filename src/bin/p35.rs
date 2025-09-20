@@ -13,15 +13,9 @@ impl Solution {
         }
         let mid = left + (right - left) / 2;
         match nums[mid].cmp(&target) {
-            Ordering::Less => {
-                Self::binary_search(nums, target, mid + 1, right)
-            }
-            Ordering::Equal => {
-                mid
-            }
-            Ordering::Greater => {
-                Self::binary_search(nums, target, left, mid)
-            }
+            Ordering::Less => Self::binary_search(nums, target, mid + 1, right),
+            Ordering::Equal => mid,
+            Ordering::Greater => Self::binary_search(nums, target, left, mid),
         }
     }
 }

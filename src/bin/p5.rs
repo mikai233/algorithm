@@ -12,8 +12,8 @@ impl Solution {
                 lower = c_lower;
                 upper = c_upper;
             }
-            if let Some(n) = &s_bytes.get(i + 1) {
-                if **n == s_bytes[i] {
+            if let Some(n) = &s_bytes.get(i + 1)
+                && **n == s_bytes[i] {
                     let mut c_lower = i;
                     let mut c_upper = i + 1;
                     Self::expand_around(s_bytes, &mut c_lower, &mut c_upper);
@@ -22,7 +22,6 @@ impl Solution {
                         upper = c_upper;
                     }
                 }
-            }
         }
         s[lower..=upper].to_string()
     }

@@ -1,7 +1,7 @@
 struct Solution;
 impl Solution {
-    pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
-        if nums.len() == 0 {
+    pub fn remove_duplicates(nums: &mut [i32]) -> i32 {
+        if nums.is_empty() {
             return 0;
         }
         let mut k = 0;
@@ -15,7 +15,10 @@ impl Solution {
     }
 }
 fn main() {
-    println!("{}", Solution::remove_duplicates(&mut vec![1, 1, 2]));
-    println!("{}", Solution::remove_duplicates(&mut vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
-    println!("{}", Solution::remove_duplicates(&mut vec![0, 0, 0]));
+    println!("{}", Solution::remove_duplicates(&mut [1, 1, 2]));
+    println!(
+        "{}",
+        Solution::remove_duplicates(&mut [0, 0, 1, 1, 1, 2, 2, 3, 3, 4])
+    );
+    println!("{}", Solution::remove_duplicates(&mut [0, 0, 0]));
 }

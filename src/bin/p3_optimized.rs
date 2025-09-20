@@ -9,7 +9,9 @@ impl Solution {
         let mut max_len = 0;
         let mut left = 0;
         for (right, ch) in s.chars().enumerate() {
-            if let Some(last_index) = last_seen.get(&ch) && *last_index >= left {
+            if let Some(last_index) = last_seen.get(&ch)
+                && *last_index >= left
+            {
                 left = *last_index + 1;
             }
             last_seen.insert(ch, right);
@@ -21,9 +23,24 @@ impl Solution {
 
 fn main() {
     println!("{}", Solution::length_of_longest_substring(" ".to_string()));
-    println!("{}", Solution::length_of_longest_substring("  ".to_string()));
-    println!("{}", Solution::length_of_longest_substring("abcabcbb".to_string()));
-    println!("{}", Solution::length_of_longest_substring("bbbbb".to_string()));
-    println!("{}", Solution::length_of_longest_substring("pwwkew".to_string()));
-    println!("{}", Solution::length_of_longest_substring("pww kew".to_string()));
+    println!(
+        "{}",
+        Solution::length_of_longest_substring("  ".to_string())
+    );
+    println!(
+        "{}",
+        Solution::length_of_longest_substring("abcabcbb".to_string())
+    );
+    println!(
+        "{}",
+        Solution::length_of_longest_substring("bbbbb".to_string())
+    );
+    println!(
+        "{}",
+        Solution::length_of_longest_substring("pwwkew".to_string())
+    );
+    println!(
+        "{}",
+        Solution::length_of_longest_substring("pww kew".to_string())
+    );
 }

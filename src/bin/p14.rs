@@ -22,6 +22,20 @@ impl Solution {
 }
 
 fn main() {
-    println!("{}", Solution::longest_common_prefix(vec!["flower".to_string(), "flowle".to_string(), "flight".to_string()]));
-    println!("{}", Solution::longest_common_prefix(vec!["dog".to_string(), "racecar".to_string(), "car".to_string()]));
+    println!(
+        "{}",
+        Solution::longest_common_prefix(vec![
+            "flower".to_string(),
+            "flowle".to_string(),
+            "flight".to_string()
+        ])
+    );
+    println!(
+        "{}",
+        Solution::longest_common_prefix(vec![
+            "dog".to_string(),
+            "racecar".to_string(),
+            "car".to_string()
+        ])
+    );
 }

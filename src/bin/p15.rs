@@ -34,7 +34,7 @@ impl Solution {
     }
 }
 fn main() {
-    println!("{:?}", Solution::three_sum(vec![-1, 0, 1, 2, -1, -4]));// -4 -1 -1 0 1 2
+    println!("{:?}", Solution::three_sum(vec![-1, 0, 1, 2, -1, -4])); // -4 -1 -1 0 1 2
     println!("{:?}", Solution::three_sum(vec![0, 1, 1]));
     println!("{:?}", Solution::three_sum(vec![0, 0, 0]));
     println!("{:?}", Solution::three_sum(vec![1, -1, -1, 0]));

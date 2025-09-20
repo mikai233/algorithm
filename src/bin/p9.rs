@@ -17,7 +17,8 @@ impl Solution {
             match v {
                 4 | 9 => {
                     let (_, romain_high) = Self::get_roman(partial_num).unwrap();
-                    let (romain_low, _) = Self::get_roman(Self::roman_to_int(romain_high) - partial_num).unwrap();
+                    let (romain_low, _) =
+                        Self::get_roman(Self::roman_to_int(romain_high) - partial_num).unwrap();
                     result.push_str(&format!("{}{}", romain_low, romain_high))
                 }
                 _ => {

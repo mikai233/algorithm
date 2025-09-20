@@ -13,7 +13,7 @@ impl Solution {
                         return false;
                     }
                 }
-                _ => unreachable!()
+                _ => unreachable!(),
             }
         }
         stack.is_empty()

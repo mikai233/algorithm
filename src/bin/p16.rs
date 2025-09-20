@@ -28,5 +28,8 @@ impl Solution {
 fn main() {
     println!("{}", Solution::three_sum_closest(vec![-1, 2, 1, -4], 1));
     println!("{}", Solution::three_sum_closest(vec![0, 0, 0], 1));
-    println!("{}", Solution::three_sum_closest(vec![10, 20, 30, 40, 50, 60, 70, 80, 90], 1));
+    println!(
+        "{}",
+        Solution::three_sum_closest(vec![10, 20, 30, 40, 50, 60, 70, 80, 90], 1)
+    );
 }

@@ -21,5 +21,10 @@ impl Solution {
     }
 }
 fn main() {
-    assert_eq!(Solution::two_sum(vec![2, 7, 11, 15], 9).into_iter().collect::<HashSet<_>>(), vec![0, 1].into_iter().collect::<HashSet<_>>());
+    assert_eq!(
+        Solution::two_sum(vec![2, 7, 11, 15], 9)
+            .into_iter()
+            .collect::<HashSet<_>>(),
+        vec![0, 1].into_iter().collect::<HashSet<_>>()
+    );
 }

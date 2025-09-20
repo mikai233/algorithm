@@ -21,13 +21,40 @@ impl Solution {
 
 fn main() {
     println!("{}", Solution::longest_valid_parentheses("()".to_string()));
-    println!("{}", Solution::longest_valid_parentheses(String::from("()())")));
-    println!("{}", Solution::longest_valid_parentheses(String::from("(()")));
-    println!("{}", Solution::longest_valid_parentheses(String::from(")()())")));
-    println!("{}", Solution::longest_valid_parentheses(String::from(")()())")));
-    println!("{}", Solution::longest_valid_parentheses(String::from("()((())")));
-    println!("{}", Solution::longest_valid_parentheses(String::from("()(()(()((()())")));
-    println!("{}", Solution::longest_valid_parentheses(String::from("()(()(()((()())")));
-    println!("{}", Solution::longest_valid_parentheses(String::from("()()))()")));
-    println!("{}", Solution::longest_valid_parentheses(String::from("(()(((()")));
+    println!(
+        "{}",
+        Solution::longest_valid_parentheses(String::from("()())"))
+    );
+    println!(
+        "{}",
+        Solution::longest_valid_parentheses(String::from("(()"))
+    );
+    println!(
+        "{}",
+        Solution::longest_valid_parentheses(String::from(")()())"))
+    );
+    println!(
+        "{}",
+        Solution::longest_valid_parentheses(String::from(")()())"))
+    );
+    println!(
+        "{}",
+        Solution::longest_valid_parentheses(String::from("()((())"))
+    );
+    println!(
+        "{}",
+        Solution::longest_valid_parentheses(String::from("()(()(()((()())"))
+    );
+    println!(
+        "{}",
+        Solution::longest_valid_parentheses(String::from("()(()(()((()())"))
+    );
+    println!(
+        "{}",
+        Solution::longest_valid_parentheses(String::from("()()))()"))
+    );
+    println!(
+        "{}",
+        Solution::longest_valid_parentheses(String::from("(()(((()"))
+    );
 }

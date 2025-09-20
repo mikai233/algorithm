@@ -52,9 +52,21 @@ impl Solution {
     }
 }
 fn main() {
-    println!("{:?}", Solution::find_substring(String::from("barfoothefoobarman"), vec!["foo".to_string(), "bar".to_string()]));
+    println!(
+        "{:?}",
+        Solution::find_substring(
+            String::from("barfoothefoobarman"),
+            vec!["foo".to_string(), "bar".to_string()]
+        )
+    );
     let s = String::from("lingmindraboofooowingdingbarrwingmonkeypoundcake");
-    let worlds = vec!["fooo", "barr", "wing", "ding", "wing"].into_iter().map(|x| x.to_string()).collect();
+    let worlds = vec!["fooo", "barr", "wing", "ding", "wing"]
+        .into_iter()
+        .map(|x| x.to_string())
+        .collect();
     println!("{:?}", Solution::find_substring(s, worlds));
-    println!("{:?}", Solution::find_substring("mississippi".to_string(), vec!["mississippis".to_string()]));
+    println!(
+        "{:?}",
+        Solution::find_substring("mississippi".to_string(), vec!["mississippis".to_string()])
+    );
 }

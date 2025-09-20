@@ -4,8 +4,8 @@ struct Solution;
 impl Solution {
     pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
         let len = nums1.len() + nums2.len();
-        if len % 2 == 0 {
-            let e1 = Solution::find_k_element(&*nums1, &*nums2, len / 2) as f64;
+        if len.is_multiple_of(2) {
+            let e1 = Solution::find_k_element(&nums1, &nums2, len / 2) as f64;
             let e2 = Solution::find_k_element(&nums1, &nums2, len / 2 + 1) as f64;
             (e1 + e2) / 2.0
         } else {
@@ -37,6 +37,12 @@ impl Solution {
     }
 }
 fn main() {
-    println!("{}", Solution::find_median_sorted_arrays(vec![1, 3], vec![2]));
-    println!("{}", Solution::find_median_sorted_arrays(vec![1, 2], vec![3, 4]));
+    println!(
+        "{}",
+        Solution::find_median_sorted_arrays(vec![1, 3], vec![2])
+    );
+    println!(
+        "{}",
+        Solution::find_median_sorted_arrays(vec![1, 2], vec![3, 4])
+    );
 }

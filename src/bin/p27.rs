@@ -1,7 +1,7 @@
 struct Solution;
 impl Solution {
-    pub fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
-        if nums.len() == 0 {
+    pub fn remove_element(nums: &mut [i32], val: i32) -> i32 {
+        if nums.is_empty() {
             return 0;
         }
         let mut k: usize = 0;
@@ -15,5 +15,5 @@ impl Solution {
     }
 }
 fn main() {
-    println!("{}", Solution::remove_element(&mut vec![4, 5, 0, -3, 7], 7));
+    println!("{}", Solution::remove_element(&mut [4, 5, 0, -3, 7], 7));
 }

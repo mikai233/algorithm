@@ -2,7 +2,9 @@ struct Solution;
 
 impl Solution {
     pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
-        if nums.is_empty() { return 0; }
+        if nums.is_empty() {
+            return 0;
+        }
         let (mut left, mut right) = (0, nums.len());
         while left < right {
             let mid = left + (right - left) / 2;

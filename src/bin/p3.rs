@@ -23,8 +23,20 @@ impl Solution {
 
 fn main() {
     println!("{}", Solution::length_of_longest_substring(" ".to_string()));
-    println!("{}", Solution::length_of_longest_substring("abcabcbb".to_string()));
-    println!("{}", Solution::length_of_longest_substring("bbbbb".to_string()));
-    println!("{}", Solution::length_of_longest_substring("pwwkew".to_string()));
-    println!("{}", Solution::length_of_longest_substring("pww kew".to_string()));
+    println!(
+        "{}",
+        Solution::length_of_longest_substring("abcabcbb".to_string())
+    );
+    println!(
+        "{}",
+        Solution::length_of_longest_substring("bbbbb".to_string())
+    );
+    println!(
+        "{}",
+        Solution::length_of_longest_substring("pwwkew".to_string())
+    );
+    println!(
+        "{}",
+        Solution::length_of_longest_substring("pww kew".to_string())
+    );
 }

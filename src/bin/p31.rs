@@ -1,9 +1,12 @@
 struct Solution;
 
 impl Solution {
-    pub fn next_permutation(nums: &mut Vec<i32>) {
+    pub fn next_permutation(nums: &mut [i32]) {
         if let Some(pivot) = (0..nums.len() - 1).rev().find(|&i| nums[i] < nums[i + 1]) {
-            let successor = nums[pivot + 1..].iter().rposition(|&x| x > nums[pivot]).unwrap();
+            let successor = nums[pivot + 1..]
+                .iter()
+                .rposition(|&x| x > nums[pivot])
+                .unwrap();
             nums.swap(pivot, pivot + 1 + successor);
             nums[pivot + 1..].reverse();
         } else {

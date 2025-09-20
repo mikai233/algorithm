@@ -8,17 +8,17 @@ pub struct ListNode {
 impl ListNode {
     #[inline]
     fn new(val: i32) -> Self {
-        ListNode {
-            next: None,
-            val,
-        }
+        ListNode { next: None, val }
     }
 }
 
 struct Solution;
 
 impl Solution {
-    pub fn merge_two_lists(mut list1: Option<Box<ListNode>>, mut list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn merge_two_lists(
+        mut list1: Option<Box<ListNode>>,
+        mut list2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
         let mut dummy = ListNode::new(0);
         let mut prev = &mut dummy;
         loop {

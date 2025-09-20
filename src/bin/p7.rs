@@ -3,7 +3,7 @@ impl Solution {
     pub fn reverse(mut x: i32) -> i32 {
         let mut reversed = 0;
         while x != 0 {
-            if reversed > i32::MAX / 10 || reversed < i32::MIN / 10 {
+            if !(i32::MIN / 10..=i32::MAX / 10).contains(&reversed) {
                 return 0;
             }
             reversed = reversed * 10 + x % 10;

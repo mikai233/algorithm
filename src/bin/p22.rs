@@ -7,7 +7,13 @@ impl Solution {
         result
     }
 
-    fn backtrack(result: &mut Vec<String>, current: &mut String, n: i32, open_count: i32, close_count: i32) {
+    fn backtrack(
+        result: &mut Vec<String>,
+        current: &mut String,
+        n: i32,
+        open_count: i32,
+        close_count: i32,
+    ) {
         if current.len() == (n as usize) * 2 {
             result.push(current.to_string());
             return;

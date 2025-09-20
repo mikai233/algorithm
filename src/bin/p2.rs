@@ -8,15 +8,15 @@ pub struct ListNode {
 impl ListNode {
     #[inline]
     fn new(val: i32) -> Self {
-        ListNode {
-            next: None,
-            val,
-        }
+        ListNode { next: None, val }
     }
 }
 struct Solution;
 impl Solution {
-    pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn add_two_numbers(
+        l1: Option<Box<ListNode>>,
+        l2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
         let mut l1 = l1.as_ref();
         let mut l2 = l2.as_ref();
         let mut result = ListNode::new(0);
@@ -24,12 +24,8 @@ impl Solution {
         let mut carry = 0;
         loop {
             let val = match (l1, l2) {
-                (None, Some(n)) | (Some(n), None) => {
-                    n.val + carry
-                }
-                (Some(s1), Some(s2)) => {
-                    s1.val + s2.val + carry
-                }
+                (None, Some(n)) | (Some(n), None) => n.val + carry,
+                (Some(s1), Some(s2)) => s1.val + s2.val + carry,
                 (None, None) => {
                     break;
                 }
@@ -59,7 +55,19 @@ fn vec_to_node(vec: Vec<i32>) -> Option<Box<ListNode>> {
 }
 
 fn main() {
-    assert_eq!(Solution::add_two_numbers(vec_to_node(vec![2, 4, 3]), vec_to_node(vec![5, 6, 4])), vec_to_node(vec![7, 0, 8]));
-    assert_eq!(Solution::add_two_numbers(vec_to_node(vec![0]), vec_to_node(vec![0])), vec_to_node(vec![0]));
-    assert_eq!(Solution::add_two_numbers(vec_to_node(vec![9, 9, 9, 9, 9, 9, 9]), vec_to_node(vec![9, 9, 9, 9])), vec_to_node(vec![8, 9, 9, 9, 0, 0, 0, 1]));
+    assert_eq!(
+        Solution::add_two_numbers(vec_to_node(vec![2, 4, 3]), vec_to_node(vec![5, 6, 4])),
+        vec_to_node(vec![7, 0, 8])
+    );
+    assert_eq!(
+        Solution::add_two_numbers(vec_to_node(vec![0]), vec_to_node(vec![0])),
+        vec_to_node(vec![0])
+    );
+    assert_eq!(
+        Solution::add_two_numbers(
+            vec_to_node(vec![9, 9, 9, 9, 9, 9, 9]),
+            vec_to_node(vec![9, 9, 9, 9])
+        ),
+        vec_to_node(vec![8, 9, 9, 9, 0, 0, 0, 1])
+    );
 }

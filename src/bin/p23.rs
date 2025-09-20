@@ -8,10 +8,7 @@ pub struct ListNode {
 impl ListNode {
     #[inline]
     fn new(val: i32) -> Self {
-        ListNode {
-            next: None,
-            val,
-        }
+        ListNode { next: None, val }
     }
 }
 
@@ -43,7 +40,11 @@ impl Solution {
         }
     }
 
-    fn merge(lists: &Vec<Option<Box<ListNode>>>, left: usize, right: usize) -> Option<Box<ListNode>> {
+    fn merge(
+        lists: &Vec<Option<Box<ListNode>>>,
+        left: usize,
+        right: usize,
+    ) -> Option<Box<ListNode>> {
         if left == right {
             return lists[left].clone();
         }

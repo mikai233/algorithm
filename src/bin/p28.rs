@@ -20,8 +20,20 @@ impl Solution {
 }
 
 fn main() {
-    println!("{}", Solution::str_str(String::from("sadbutsad"), String::from("sad")));
-    println!("{}", Solution::str_str(String::from("leetcode"), String::from("leeto")));
-    println!("{}", Solution::str_str(String::from("leeleetocode"), String::from("leeto")));
-    println!("{}", Solution::str_str(String::from("aaa"), String::from("aaaa")));
+    println!(
+        "{}",
+        Solution::str_str(String::from("sadbutsad"), String::from("sad"))
+    );
+    println!(
+        "{}",
+        Solution::str_str(String::from("leetcode"), String::from("leeto"))
+    );
+    println!(
+        "{}",
+        Solution::str_str(String::from("leeleetocode"), String::from("leeto"))
+    );
+    println!(
+        "{}",
+        Solution::str_str(String::from("aaa"), String::from("aaaa"))
+    );
 }

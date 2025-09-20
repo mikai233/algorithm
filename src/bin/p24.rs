@@ -8,10 +8,7 @@ pub struct ListNode {
 impl ListNode {
     #[inline]
     fn new(val: i32) -> Self {
-        ListNode {
-            next: None,
-            val,
-        }
+        ListNode { next: None, val }
     }
 }
 
@@ -46,7 +43,6 @@ impl Solution {
         dummy.next
     }
 }
-
 
 fn vec_to_node(vec: Vec<i32>) -> Option<Box<ListNode>> {
     let mut root = Box::new(ListNode::new(0));

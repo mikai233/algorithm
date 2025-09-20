@@ -8,16 +8,16 @@ pub struct ListNode {
 impl ListNode {
     #[inline]
     fn new(val: i32) -> Self {
-        ListNode {
-            next: None,
-            val,
-        }
+        ListNode { next: None, val }
     }
 }
 
 struct Solution;
 impl Solution {
-    pub fn add_two_numbers(mut l1: Option<Box<ListNode>>, mut l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn add_two_numbers(
+        mut l1: Option<Box<ListNode>>,
+        mut l2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
         let mut stack1 = vec![];
         let mut stack2 = vec![];
         while let Some(mut node) = l1 {
@@ -34,15 +34,9 @@ impl Solution {
         let mut carry = 0;
         loop {
             let val = match (stack1.pop(), stack2.pop()) {
-                (Some(n1), Some(n2)) => {
-                    n1.val + n2.val + carry
-                }
-                (None, Some(n2)) => {
-                    n2.val + carry
-                }
-                (Some(n1), None) => {
-                    n1.val + carry
-                }
+                (Some(n1), Some(n2)) => n1.val + n2.val + carry,
+                (None, Some(n2)) => n2.val + carry,
+                (Some(n1), None) => n1.val + carry,
                 (None, None) => break,
             };
             let mut node = Box::new(ListNode::new(val % 10));
@@ -70,5 +64,8 @@ fn vec_to_node(vec: Vec<i32>) -> Option<Box<ListNode>> {
 }
 
 fn main() {
-    println!("{:?}", Solution::add_two_numbers(vec_to_node(vec![7, 2, 4, 3]), vec_to_node(vec![5, 6, 4])));
+    println!(
+        "{:?}",
+        Solution::add_two_numbers(vec_to_node(vec![7, 2, 4, 3]), vec_to_node(vec![5, 6, 4]))
+    );
 }
