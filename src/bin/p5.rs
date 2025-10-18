@@ -13,15 +13,16 @@ impl Solution {
                 upper = c_upper;
             }
             if let Some(n) = &s_bytes.get(i + 1)
-                && **n == s_bytes[i] {
-                    let mut c_lower = i;
-                    let mut c_upper = i + 1;
-                    Self::expand_around(s_bytes, &mut c_lower, &mut c_upper);
-                    if (c_upper - c_lower) > (upper - lower) {
-                        lower = c_lower;
-                        upper = c_upper;
-                    }
+                && **n == s_bytes[i]
+            {
+                let mut c_lower = i;
+                let mut c_upper = i + 1;
+                Self::expand_around(s_bytes, &mut c_lower, &mut c_upper);
+                if (c_upper - c_lower) > (upper - lower) {
+                    lower = c_lower;
+                    upper = c_upper;
                 }
+            }
         }
         s[lower..=upper].to_string()
     }
