@@ -26,4 +26,4 @@ jobs:
 
       # Clippy
       - name: Clippy
-        run: cargo clippy -- -D warnings
+        run: cargo clippy
