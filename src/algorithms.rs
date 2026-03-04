@@ -9,4 +9,5 @@ pub mod q367_valid_perfect_square;
 pub mod q392_is_subsequence;
 pub mod q42_trapping_rain_water;
 pub mod q704_binary_search;
+pub mod q74_search_a_2d_matrix;
 pub mod q876_middle_of_the_linked_list;
