@@ -1,3 +1,4 @@
 pub mod q1768_merge_strings_alternately;
 pub mod q2239_find_closest_number_to_zero;
+pub mod q278_first_bad_version;
 pub mod q28_remove_duplicates_from_sorted_list_ii;
