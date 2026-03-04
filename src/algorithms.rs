@@ -6,6 +6,7 @@ pub mod q238_product_of_array_except_self;
 pub mod q278_first_bad_version;
 pub mod q28_remove_duplicates_from_sorted_list_ii;
 pub mod q329_longest_increasing_path_in_a_matrix;
+pub mod q33_search_in_rotated_sorted_array;
 pub mod q367_valid_perfect_square;
 pub mod q392_is_subsequence;
 pub mod q42_trapping_rain_water;
