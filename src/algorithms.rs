@@ -2,6 +2,7 @@ pub mod q1004_max_consecutive_ones_iii;
 pub mod q153_find_minimum_in_rotated_sorted_array;
 pub mod q1768_merge_strings_alternately;
 pub mod q1_two_sum;
+pub mod q209_minimum_size_subarray_sum;
 pub mod q2239_find_closest_number_to_zero;
 pub mod q238_product_of_array_except_self;
 pub mod q278_first_bad_version;
