@@ -4,6 +4,7 @@ pub mod q1768_merge_strings_alternately;
 pub mod q1_two_sum;
 pub mod q209_minimum_size_subarray_sum;
 pub mod q2239_find_closest_number_to_zero;
+pub mod q226_invert_binary_tree;
 pub mod q238_product_of_array_except_self;
 pub mod q278_first_bad_version;
 pub mod q28_remove_duplicates_from_sorted_list_ii;
