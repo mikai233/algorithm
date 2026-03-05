@@ -1,3 +1,4 @@
+pub mod q1004_max_consecutive_ones_iii;
 pub mod q153_find_minimum_in_rotated_sorted_array;
 pub mod q1768_merge_strings_alternately;
 pub mod q1_two_sum;
