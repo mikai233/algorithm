@@ -14,6 +14,7 @@ pub mod q278_first_bad_version;
 pub mod q28_remove_duplicates_from_sorted_list_ii;
 pub mod q329_longest_increasing_path_in_a_matrix;
 pub mod q33_search_in_rotated_sorted_array;
+pub mod q347_top_k_frequent_elements;
 pub mod q35_serach_insert_position;
 pub mod q367_valid_perfect_square;
 pub mod q392_is_subsequence;
