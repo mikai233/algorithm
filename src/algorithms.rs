@@ -30,4 +30,5 @@ pub mod q74_search_a_2d_matrix;
 pub mod q857_minimum_cost_to_hire_k_workers;
 pub mod q875_koko_eating_bananas;
 pub mod q876_middle_of_the_linked_list;
+pub mod q973_k_closest_points_to_origin;
 pub mod q98_validate_binary_search_tree;
