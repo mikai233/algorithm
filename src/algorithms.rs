@@ -5,6 +5,7 @@ pub mod q162_find_peak_element;
 pub mod q1768_merge_strings_alternately;
 pub mod q1_two_sum;
 pub mod q209_minimum_size_subarray_sum;
+pub mod q215_kth_largest_element_in_an_array;
 pub mod q2239_find_closest_number_to_zero;
 pub mod q226_invert_binary_tree;
 pub mod q230_kth_smallest_element_in_a_bst;
