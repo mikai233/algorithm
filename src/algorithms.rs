@@ -19,6 +19,7 @@ pub mod q347_top_k_frequent_elements;
 pub mod q35_serach_insert_position;
 pub mod q367_valid_perfect_square;
 pub mod q392_is_subsequence;
+pub mod q39_combination_sum;
 pub mod q424_longest_repeating_character_replacement;
 pub mod q42_trapping_rain_water;
 pub mod q46_permutations;
