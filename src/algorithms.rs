@@ -15,6 +15,7 @@ pub mod q2239_find_closest_number_to_zero;
 pub mod q226_invert_binary_tree;
 pub mod q230_kth_smallest_element_in_a_bst;
 pub mod q235_lowest_common_ancestor_of_a_binary_search_tree;
+pub mod q236_lowest_common_ancestor_of_a_binary_tree;
 pub mod q238_product_of_array_except_self;
 pub mod q278_first_bad_version;
 pub mod q28_remove_duplicates_from_sorted_list_ii;
