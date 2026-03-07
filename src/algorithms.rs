@@ -31,6 +31,7 @@ pub mod q704_binary_search;
 pub mod q74_search_a_2d_matrix;
 pub mod q77_combinations;
 pub mod q78_subsets;
+pub mod q79_world_search;
 pub mod q857_minimum_cost_to_hire_k_workers;
 pub mod q875_koko_eating_bananas;
 pub mod q876_middle_of_the_linked_list;
