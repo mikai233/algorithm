@@ -6,6 +6,7 @@ pub mod q1768_merge_strings_alternately;
 pub mod q1971_find_if_path_exists_in_graph;
 pub mod q1_two_sum;
 pub mod q200_number_of_islands;
+pub mod q207_course_schedule;
 pub mod q209_minimum_size_subarray_sum;
 pub mod q212_word_search_ii;
 pub mod q215_kth_largest_element_in_an_array;
