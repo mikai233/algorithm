@@ -21,6 +21,7 @@ pub mod q367_valid_perfect_square;
 pub mod q392_is_subsequence;
 pub mod q424_longest_repeating_character_replacement;
 pub mod q42_trapping_rain_water;
+pub mod q46_permutations;
 pub mod q530_minimum_absolute_difference_in_bst;
 pub mod q543_diameter_of_binary_tree;
 pub mod q567_permutation_in_string;
