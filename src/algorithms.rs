@@ -19,6 +19,7 @@ pub mod q235_lowest_common_ancestor_of_a_binary_search_tree;
 pub mod q236_lowest_common_ancestor_of_a_binary_tree;
 pub mod q238_product_of_array_except_self;
 pub mod q278_first_bad_version;
+pub mod q287_find_the_duplicate_number;
 pub mod q28_remove_duplicates_from_sorted_list_ii;
 pub mod q329_longest_increasing_path_in_a_matrix;
 pub mod q33_search_in_rotated_sorted_array;
