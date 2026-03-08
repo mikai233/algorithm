@@ -32,6 +32,7 @@ pub mod q392_is_subsequence;
 pub mod q39_combination_sum;
 pub mod q424_longest_repeating_character_replacement;
 pub mod q42_trapping_rain_water;
+pub mod q438_find_all_anagrams_in_a_string;
 pub mod q46_permutations;
 pub mod q49_group_anagrams;
 pub mod q530_minimum_absolute_difference_in_bst;
