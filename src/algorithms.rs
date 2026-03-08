@@ -1,6 +1,7 @@
 pub mod q1004_max_consecutive_ones_iii;
 pub mod q102_binary_tree_level_order_traversal;
 pub mod q107_binary_tree_level_order_traversal_ii;
+pub mod q122_best_time_to_buy_and_sell_stock_ii;
 pub mod q153_find_minimum_in_rotated_sorted_array;
 pub mod q162_find_peak_element;
 pub mod q1768_merge_strings_alternately;
