@@ -34,6 +34,7 @@ pub mod q42_trapping_rain_water;
 pub mod q46_permutations;
 pub mod q530_minimum_absolute_difference_in_bst;
 pub mod q543_diameter_of_binary_tree;
+pub mod q55_jump_game;
 pub mod q567_permutation_in_string;
 pub mod q637_average_of_levels_in_binary_tree;
 pub mod q643_maximum_average_subarray_i;
