@@ -45,6 +45,7 @@ pub mod q567_permutation_in_string;
 pub mod q637_average_of_levels_in_binary_tree;
 pub mod q643_maximum_average_subarray_i;
 pub mod q704_binary_search;
+pub mod q733_flood_fill;
 pub mod q74_search_a_2d_matrix;
 pub mod q77_combinations;
 pub mod q78_subsets;
