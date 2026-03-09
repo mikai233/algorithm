@@ -24,6 +24,7 @@ pub mod q238_product_of_array_except_self;
 pub mod q278_first_bad_version;
 pub mod q287_find_the_duplicate_number;
 pub mod q28_remove_duplicates_from_sorted_list_ii;
+pub mod q290_word_pattern;
 pub mod q329_longest_increasing_path_in_a_matrix;
 pub mod q33_search_in_rotated_sorted_array;
 pub mod q347_top_k_frequent_elements;
