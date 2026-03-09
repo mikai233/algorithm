@@ -5,6 +5,7 @@ pub mod q122_best_time_to_buy_and_sell_stock_ii;
 pub mod q1249_minimum_remove_to_make_valid_parentheses;
 pub mod q153_find_minimum_in_rotated_sorted_array;
 pub mod q162_find_peak_element;
+pub mod q167_two_sum_ii_input_array_is_sorted;
 pub mod q1768_merge_strings_alternately;
 pub mod q1971_find_if_path_exists_in_graph;
 pub mod q1_two_sum;
