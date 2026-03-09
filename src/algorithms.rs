@@ -9,6 +9,7 @@ pub mod q1768_merge_strings_alternately;
 pub mod q1971_find_if_path_exists_in_graph;
 pub mod q1_two_sum;
 pub mod q200_number_of_islands;
+pub mod q205_isomorphic_strings;
 pub mod q207_course_schedule;
 pub mod q209_minimum_size_subarray_sum;
 pub mod q210_course_schedule_ii;
