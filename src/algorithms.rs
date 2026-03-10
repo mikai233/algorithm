@@ -44,6 +44,7 @@ pub mod q42_trapping_rain_water;
 pub mod q438_find_all_anagrams_in_a_string;
 pub mod q463_island_perimeter;
 pub mod q46_permutations;
+pub mod q48_rotate_image;
 pub mod q49_group_anagrams;
 pub mod q530_minimum_absolute_difference_in_bst;
 pub mod q53_maximum_subarray;
