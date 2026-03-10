@@ -48,6 +48,7 @@ pub mod q49_group_anagrams;
 pub mod q530_minimum_absolute_difference_in_bst;
 pub mod q53_maximum_subarray;
 pub mod q543_diameter_of_binary_tree;
+pub mod q54_spiral_matrix;
 pub mod q55_jump_game;
 pub mod q567_permutation_in_string;
 pub mod q56_merge_intervals;
