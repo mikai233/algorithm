@@ -20,6 +20,7 @@ pub mod q209_minimum_size_subarray_sum;
 pub mod q210_course_schedule_ii;
 pub mod q212_word_search_ii;
 pub mod q215_kth_largest_element_in_an_array;
+pub mod q217_contains_duplicate;
 pub mod q2239_find_closest_number_to_zero;
 pub mod q226_invert_binary_tree;
 pub mod q228_summary_ranges;
