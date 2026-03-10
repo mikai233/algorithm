@@ -50,6 +50,7 @@ pub mod q53_maximum_subarray;
 pub mod q543_diameter_of_binary_tree;
 pub mod q55_jump_game;
 pub mod q567_permutation_in_string;
+pub mod q56_merge_intervals;
 pub mod q572_subtree_of_another_tree;
 pub mod q637_average_of_levels_in_binary_tree;
 pub mod q643_maximum_average_subarray_i;
