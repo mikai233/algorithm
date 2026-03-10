@@ -59,6 +59,7 @@ pub mod q643_maximum_average_subarray_i;
 pub mod q704_binary_search;
 pub mod q733_flood_fill;
 pub mod q74_search_a_2d_matrix;
+pub mod q771_jewels_and_stones;
 pub mod q77_combinations;
 pub mod q78_subsets;
 pub mod q79_word_search;
