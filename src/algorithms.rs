@@ -38,6 +38,7 @@ pub mod q33_search_in_rotated_sorted_array;
 pub mod q347_top_k_frequent_elements;
 pub mod q35_serach_insert_position;
 pub mod q367_valid_perfect_square;
+pub mod q383_ransom_node;
 pub mod q392_is_subsequence;
 pub mod q39_combination_sum;
 pub mod q424_longest_repeating_character_replacement;
