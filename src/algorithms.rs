@@ -73,4 +73,5 @@ pub mod q875_koko_eating_bananas;
 pub mod q876_middle_of_the_linked_list;
 pub mod q90_subsets_ii;
 pub mod q973_k_closest_points_to_origin;
+pub mod q977_squares_of_a_sorted_array;
 pub mod q98_validate_binary_search_tree;
