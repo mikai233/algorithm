@@ -5,6 +5,7 @@ pub mod q11_container_with_most_water;
 pub mod q121_best_time_to_buy_and_sell_stock;
 pub mod q122_best_time_to_buy_and_sell_stock_ii;
 pub mod q1249_minimum_remove_to_make_valid_parentheses;
+pub mod q128_longest_consecutive;
 pub mod q13_roman_to_integer;
 pub mod q14_longest_common_prefix;
 pub mod q153_find_minimum_in_rotated_sorted_array;
