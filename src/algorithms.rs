@@ -36,6 +36,7 @@ pub mod q287_find_the_duplicate_number;
 pub mod q290_word_pattern;
 pub mod q329_longest_increasing_path_in_a_matrix;
 pub mod q33_search_in_rotated_sorted_array;
+pub mod q344_reverse_string;
 pub mod q347_top_k_frequent_elements;
 pub mod q35_search_insert_position;
 pub mod q367_valid_perfect_square;
